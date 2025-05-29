@@ -12,11 +12,11 @@ const links = [
 
 const Header = () => {
     return (
-        <header className='pb-10 flex  justify-between'>
-            <a href="/">
+        <header className='pb-10 flex  justify-between fixed top-0 left-0 w-full'>
+            <a href="/" className="flex">
                 <div className='bg-[#007ced] size-10 rounded-full '>A</div>
 
-                <div className='text-white font-semibold text-xl text-nowrap break-keep'>
+                <div className='text-white font-semibold text-xl text-nowrap break-keep '>
                     Alex
                     <span className='font-normal'>Smith</span>
                 </div>

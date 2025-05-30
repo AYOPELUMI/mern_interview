@@ -12,19 +12,19 @@ const links = [
 
 const Header = () => {
     return (
-        <header className='pb-10 flex  justify-between fixed top-0 left-0 w-full'>
-            <a href="/" className="flex">
-                <div className='bg-[#007ced] size-10 rounded-full '>A</div>
+        <header className='pb-10 flex  justify-between relative top-0 left-0 w-full'>
+            <a href="/" className="flex gap-2 items-center">
+                <div className='bg-[#007ced] size-10 rounded-full text-[28px] leading-[44px] font-extrabold flex items-center justify-center'>A</div>
 
-                <div className='text-white font-semibold text-xl text-nowrap break-keep '>
+                <div className='text-white font-semibold text-xl leading-[50px] text-nowrap break-keep '>
                     Alex
-                    <span className='font-normal'>Smith</span>
+                    <span className='font-normal'> Smith</span>
                 </div>
             </a>
             <nav>
                 <ul className='hidden lg:flex gap-10'>
                     {links.map((link) => (
-                        <li>
+                        <li key={link.label}>
                             <a href={link.href} className='text-sm text-[#f5f5f5] no-underline'>{link.label}</a>
                         </li>
                     ))}
